@@ -1,26 +1,26 @@
 # Calculating the Square root of two.
 This takes an iterative approach to finding the square root of two. Each step nearly doubles the amount of digits. It is based on the simple statement  
-$$ \sqrt 2 = {a \over b}+x$$
+$$\sqrt 2 = {a \over b}+x$$  
 where $a\over b$ is a a rational approximation for $\sqrt2$ and we are attempting to calculate $x$.
 
-We want x to be the reciprocal of a natural number, so that we will build a sequence of rational approximations that get closer and closer to $\sqrt2$.
-$$ \sqrt 2 \approx {a \over b}+{1\over n}$$
-Squaring gives
-$$ 2 \approx ({a \over b}+{1\over n})^2$$
-$$ 2 \approx {a^2 \over b^2}+{2a \over bn}+{1\over n^2}$$
-Rearranging for $1\over n$ gives
-$$ {1\over n} \approx {b\over 2a}(2-{a^2 \over b^2}-{1\over n^2}) $$
-$$ {1\over n} \approx {b\over 2a}({2b^2\over b^2}-{a^2 \over b^2})-{b\over 2an^2} $$
-$$ {1\over n} \approx {2b^2-a^2\over 2ab}-{b\over 2an^2} $$
-Now since ${a\over b}\approx\sqrt2$ we have
-$$ a^2 \approx 2b^2$$
-$$ 2b^2-a^2 \approx 0$$
-Now since it cannot be zero it must be $\pm1$, hence
-$$ 2b^2-a^2=\pm1$$
-Substituting back we have
-$$ {1\over n} \approx {1\over 2ab}-{b\over 2an^2} $$
+We want x to be the reciprocal of a natural number, so that we will build a sequence of rational approximations that get closer and closer to $\sqrt2$.  
+$$\sqrt 2 \approx {a \over b}+{1\over n}$$  
+Squaring gives  
+$$2 \approx ({a \over b}+{1\over n})^2$$  
+$$2 \approx {a^2 \over b^2}+{2a \over bn}+{1\over n^2}$$  
+Rearranging for $1\over n$ gives  
+$${1\over n} \approx {b\over 2a}(2-{a^2 \over b^2}-{1\over n^2}) $$  
+$${1\over n} \approx {b\over 2a}({2b^2\over b^2}-{a^2 \over b^2})-{b\over 2an^2} $$  
+$${1\over n} \approx {2b^2-a^2\over 2ab}-{b\over 2an^2} $$  
+Now since ${a\over b}\approx\sqrt2$ we have  
+$$a^2 \approx 2b^2$$  
+$$2b^2-a^2 \approx 0$$  
+Now since it cannot be zero it must be $\pm1$, hence  
+$$2b^2-a^2=\pm1$$  
+Substituting back we have  
+$${1\over n} \approx {1\over 2ab}-{b\over 2an^2} $$
 As n gets larger we can ignore the $n^2$ term,  
-$$ {1\over n} = {1\over 2ab}$$
+$${1\over n} = {1\over 2ab}$$
 or
 $$ n = 2ab$$
 which gives us our iterative sequence.  
