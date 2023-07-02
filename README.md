@@ -1,5 +1,5 @@
 # Calculating the Square root of two.
-This takes an iterative approach to finding the square root of two. Each step nearly doubles the amount of digits. It is based on the simple statement
+This takes an iterative approach to finding the square root of two. Each step nearly doubles the amount of digits. It is based on the simple statement  
 $$ \sqrt 2 = {a \over b}+x$$
 where $a\over b$ is a a rational approximation for $\sqrt2$ and we are attempting to calculate $x$.
 
